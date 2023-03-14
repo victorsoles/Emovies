@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-header {
+    width: 180px;
+    height: 50px;
+}
+
+.header {
+    width: 100%;
+    min-height: 30px;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 8px 15px;
+}
+
+.headerBtnGroup {
+    display: flex;
+    gap: 15px;
+}
+
+.navBtn {
+    font-size: 16px;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.navBtn:hover {
+    border-bottom: 2px solid #FFFFFF;
+    transition: 0.3s ease-in-out;
+}
+
+.sectionTitle {
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sectionDescription {
+    text-align: center;
+    color: #383838;
+}
+
+.gridContainer {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "mainContent sidebarContent";
+    padding: 20px;
+    flex: 1 0 auto;
+}
+
+.mainCardImg {
+    width: 279px;
+    height: 157px;
+}
+
+.sidebarCardImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.categoryCard {
+    width: 275px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    grid-template-areas: mainContent;
+}
+
+.categoryCard:hover {
+    transform: scale(1.1);
+}
+
+.mainCategoryCardTitle {
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    min-height: 40px;
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.p-footer {
+    color: #FFFFFF;
+    justify-content: center;
+    display: flex;
+}
+
+@media(max-width: 630px) {
+    .gridContainer{
+        grid-template-areas: 
+        "mainContent"
+        "sidebarContent";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footerAnchor {
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 463px) {
+    .header {
+        justify-content: center;
+    }
+    .footer {
+        justify-content: center;
+    }
+}

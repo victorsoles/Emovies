@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Filmes / Series</title>
     <link rel="stylesheet" href="css/cadastro.css">
+    <script src="/js/script.js"></script>
 </head>
 <body>
 
@@ -15,6 +16,12 @@
             <img  class="logo-header" src="/images/movies.png" alt="logo-header">
         </a>
         <div class="headerBtnGroup">
+            <a href="/html/filmes.html">
+                <button class="navBtn">Filmes</button>
+            </a>
+            <a href="/html/series.html">
+                <button class="navBtn">Series</button>
+            </a>
             <a href="/cadastrar_filmes.html">
                 <button class="navBtn">Cadastrar Filmes / Series</button>
             </a>
@@ -24,12 +31,28 @@
     <div class="container">
         <div class="modal">
             <h4>Cadastre um filme</h4>
-
-            <div class="input">
-                <input class="cadastro_filme" type="text" placeholder="Nome do seu filme ou serie">
-                <input class="enviar-foto" type="file">
-                <button class="enviar">Enviar</button>
-            </div>
+            
+            <form id="submitForm" method="GET">
+                <div class="input">
+                    <input class="cadastro_filme" id="name" type="text" placeholder="Nome do seu filme ou serie">
+                    <input class="cadastro_filme"  id="diretor" type="text" placeholder="Diretor">
+                    <select class="select-categoria" id="categoria" id="categoria">
+                        <option value="" disabled selected hidden>Selecione uma categoria</option>
+                        <option>Terror</option>
+                        <option>Ação</option>
+                        <option>Comédia</option>
+                        <option>Aventura</option>
+                        <option>Corrida</option>
+                        <option>Suspense</option>
+                        <option>Romance</option>
+                        <option>Ficção cientifica</option>
+                        <option>Drama</option>
+                    </select>
+                    <textarea class="textarea" id="sinopse" id="sinopse" cols="30" rows="10" placeholder="Sinopse"></textarea>
+                    <input class="enviar-foto" type="file">
+                    <button id="enviar" type="submit" class="enviar">Enviar</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>

@@ -48,30 +48,30 @@ html {
 }
 
 .container {
-    display: flex;
+    max-width: 100%;
     width: 100%;
-    height: 80%;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .modal {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 32.8rem;
-    height: 25rem;
-    background-color:#f8f9fa;
-    padding: 50px 60px 30px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+    width: 100%;
     border-radius: 10px;
-    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 h4 {
     margin: 0px 0px 20px;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #292929;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -86,6 +86,46 @@ h4 {
     padding: 15px;
     margin: 0px 0px 10px;
     border: 1px solid #979797;
+}
+
+.select-categoria {
+    appearance: none;
+    padding: 10px;
+    width: 405px;
+    height: 53px;
+    margin: 0px 0px 10px;
+    font-size: 16px;
+    border: 1px solid #979797;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.select-categoria:focus {
+    outline: none;
+    border-color: #979797;
+}
+
+.select-categoria::after {
+    content: '\979';
+    color: #979797;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.textarea {
+    width: 100%;
+    height: auto;
+    min-height: 53px;
+    max-height: 200px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #979797;
+    overflow: auto;
 }
 
 .cadastro_filme:focus {
@@ -117,41 +157,7 @@ h4 {
 }
 
 @media (max-width: 768px) {
-    body {
-        overflow: hidden;
-    }
-    .header {
-        display: flex;
-        justify-content: center;
-    }
-    
     .modal {
-        width: 100%;
-        height: 100%;
-    }
-
-    .input {
-        display: flex;
-        width: 100%;
-    }
-
-    .cadastro_filme {
-        width: 100%;
-        height: 53px;
-    }
-
-    .link-footer-nordpass {
-        font-size: 14px;
-        color: #979797;
-        text-decoration: none;
-        text-align: center;
-        padding: 0px 0px 10px;
-    }
-    
-    .back {
-        font-size: 14px;
-        color: #979797;
-        text-decoration: none;
-        text-align: center;
+        margin: 20px auto;
     }
 }

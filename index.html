@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emovies</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/t4t5/sweetalert@32bd141c/dist/sweetalert.css">
+    <script src="/js/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,6 +16,12 @@
         <header class="header">
             <img class="logo-header" src="/images/movies.png" alt="logo-header">
             <div class="headerBtnGroup">
+                <a href="/html/filmes.html">
+                    <button class="navBtn">Filmes</button>
+                </a>
+                <a href="/html/series.html">
+                    <button class="navBtn">Series</button>
+                </a>
                 <a href="/cadastrar_filmes.html">
                     <button class="navBtn">Cadastrar Filmes / Series</button>
                 </a>
@@ -23,22 +32,22 @@
         <section class="gridContainer">
             <div class="mainContent">
                 <!-- Mais assistidos -->
-                <div class="categoryCard">
+                <div onclick="friends()" class="categoryCard">
                     <img class="mainCardImg" src="/images/friends.jfif" alt="mainCardImg">
                     <p class="mainCategoryCardTitle">Friends</p>
                 </div>     
 
-                <div class="categoryCard">
+                <div onclick="theOffice()" class="categoryCard">
                     <img class="mainCardImg" src="/images/the-office.png" alt="mainCardImg">
                     <p class="mainCategoryCardTitle">The Office</p>
                 </div>  
 
-                <div class="categoryCard">
+                <div onclick="velozes_furiosos()" class="categoryCard">
                     <img class="mainCardImg" src="/images/velozes_furiosos.jpg" alt="mainCardImg">
                     <p class="mainCategoryCardTitle">Velozes e furiosos 9</p>
                 </div>  
 
-                <div class="categoryCard">
+                <div onclick="avatar()" class="categoryCard">
                     <img class="mainCardImg" src="/images/avatar_agua.jpg" alt="mainCardImg">
                     <p class="mainCategoryCardTitle">Avatar o caminho da agua</p>
                 </div>  

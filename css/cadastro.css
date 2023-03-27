@@ -88,33 +88,29 @@ h4 {
     border: 1px solid #979797;
 }
 
-.select-categoria {
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.5rem;
+}
+
+.select-wrapper select {
     appearance: none;
-    padding: 10px;
-    width: 405px;
-    height: 53px;
-    margin: 0px 0px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 12px;
     font-size: 16px;
+    font-weight: 500;
     border: 1px solid #979797;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: #fff;
     cursor: pointer;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-.select-categoria:focus {
+.select-wrapper select:focus {
     outline: none;
-    border-color: #979797;
-}
-
-.select-categoria::after {
-    content: '\979';
-    color: #979797;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    pointer-events: none;
 }
 
 .textarea {

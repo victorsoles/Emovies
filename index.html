@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emovies</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/t4t5/sweetalert@32bd141c/dist/sweetalert.css">
-    <script src="/js/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -32,36 +29,48 @@
         <section class="gridContainer">
             <div class="mainContent">
                 <!-- Mais assistidos -->
-                <div onclick="friends()" class="categoryCard">
+                <div id="friends" class="categoryCard">
                     <img class="mainCardImg" src="/images/friends.jfif" alt="mainCardImg">
                     <p class="mainCategoryCardTitle">Friends</p>
-                </div>     
+                </div>  
+                
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2 id="modal-title"></h2>
+                        <img id="modal-image" src="" alt="">
+                        <p id="modal-body-text"></p>
+                    </div>
+                </div>
 
-                <div onclick="theOffice()" class="categoryCard">
+                <div id="theOffice" class="categoryCard">
                     <img class="mainCardImg" src="/images/the-office.png" alt="mainCardImg">
                     <p class="mainCategoryCardTitle">The Office</p>
                 </div>  
 
-                <div onclick="velozes_furiosos()" class="categoryCard">
+                <div id="velozes_furiosos" class="categoryCard">
                     <img class="mainCardImg" src="/images/velozes_furiosos.jpg" alt="mainCardImg">
                     <p class="mainCategoryCardTitle">Velozes e furiosos 9</p>
+
                 </div>  
 
                 <div onclick="avatar()" class="categoryCard">
                     <img class="mainCardImg" src="/images/avatar_agua.jpg" alt="mainCardImg">
                     <p class="mainCategoryCardTitle">Avatar o caminho da agua</p>
+
                 </div>  
 
                 <div class="categoryCard">
                     <img class="mainCardImg" src="/images/top_gun.jfif" alt="mainCardImg">
                     <p class="mainCategoryCardTitle">Top Gun Maverick</p>
+
                 </div>  
 
                 <div class="categoryCard">
                     <img class="mainCardImg" src="/images/brooklyn.jpg" alt="mainCardImg">
                     <p class="mainCategoryCardTitle">Brooklyn nine-nine</p>
-                </div>  
 
+                </div>  
 
                 <div class="categoryCard">
                     <img class="mainCardImg" src="/images/good_place.jpg" alt="mainCardImg">
@@ -130,5 +139,7 @@
             <p class="p-footer">Emovies</p>
         </footer>
     </div>
+    <script src="/js/script.js" defer></script>
+
 </body>
 </html>

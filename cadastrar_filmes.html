@@ -36,18 +36,20 @@
                 <div class="input">
                     <input class="cadastro_filme" id="name" type="text" placeholder="Nome do seu filme ou serie">
                     <input class="cadastro_filme"  id="diretor" type="text" placeholder="Diretor">
-                    <select class="select-categoria" id="categoria" id="categoria">
-                        <option value="" disabled selected hidden>Selecione uma categoria</option>
-                        <option>Terror</option>
-                        <option>Ação</option>
-                        <option>Comédia</option>
-                        <option>Aventura</option>
-                        <option>Corrida</option>
-                        <option>Suspense</option>
-                        <option>Romance</option>
-                        <option>Ficção cientifica</option>
-                        <option>Drama</option>
-                    </select>
+                    <div class="select-wrapper">
+                        <select class="select-categoria" id="categoria">
+                            <option value="" disabled selected hidden>Selecione uma categoria</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Ação">Ação</option>
+                            <option value="Comédia">Comédia</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Corrida">Corrida</option>
+                            <option value="Suspense">Suspense</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Ficção cientifica">Ficção cientifica</option>
+                            <option value="Drama">Drama</option>
+                        </select>
+                    </div>
                     <textarea class="textarea" id="sinopse" id="sinopse" cols="30" rows="10" placeholder="Sinopse"></textarea>
                     <input class="enviar-foto" type="file">
                     <button id="enviar" type="submit" class="enviar">Enviar</button>

@@ -32,12 +32,12 @@
         <div class="modal">
             <h4>Cadastre um filme</h4>
             
-            <form id="submitForm" method="GET">
+            <form id="submitForm" action="salvar.php" method="POST">
                 <div class="input">
-                    <input class="cadastro_filme" id="name" type="text" placeholder="Nome do seu filme ou serie">
-                    <input class="cadastro_filme"  id="diretor" type="text" placeholder="Diretor">
+                    <input class="cadastro_filme" id="name" name="nome" type="text" placeholder="Nome do seu filme ou serie">
+                    <input class="cadastro_filme" name="diretor" id="diretor" type="text" placeholder="Diretor">
                     <div class="select-wrapper">
-                        <select class="select-categoria" id="categoria">
+                        <select class="select-categoria" name="categoria" id="categoria">
                             <option value="" disabled selected hidden>Selecione uma categoria</option>
                             <option value="Terror">Terror</option>
                             <option value="Ação">Ação</option>
@@ -50,8 +50,8 @@
                             <option value="Drama">Drama</option>
                         </select>
                     </div>
-                    <textarea class="textarea" id="sinopse" id="sinopse" cols="30" rows="10" placeholder="Sinopse"></textarea>
-                    <input class="enviar-foto" type="file">
+                    <textarea class="textarea" id="sinopse" name="sinopse" cols="30" rows="10" placeholder="Sinopse"></textarea>
+                    <input class="enviar-foto" type="file" name="imagem" id="imagem" accept="image/*" required>
                     <button id="enviar" type="submit" class="enviar">Enviar</button>
                 </div>
             </form>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+
+h4 {
+    margin: 0px 0px 20px;
+    font-size: 24px;
+    color: #292929;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro_filme {
+    width: 405px;
+    height: 53px;
+    padding: 15px;
+    margin: 0px 0px 10px;
+    border: 1px solid #979797;
+}
+
+.cadastro_filme:focus {
+    border-color: #979797;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    font-size: 18px;
+    display: flex;
+    justify-content: end;
+    color: #292929;
+    padding-left: 6px;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+.cadastre {
+    font-size: 18px;
+    display: flex;
+    justify-content: end;
+    color: #292929;
+}
+
+.enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #25da52;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #292929;
+    font-family: 'Poppins', sans-serif;
+}
+
+.enviar:hover {
+    background-color: #30bd54;
+    transition: 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .modal {
+        margin: 20px auto;
+    }
+}

@@ -6,14 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
     die("Método não permitido");
 }
 
-// Verifica se o token de segurança é válido
-// $token = $_POST["token"];
-
-// if ($token != "seu_token_aleatorio_aqui") {
-//     header("HTTP/1.0 403 Forbidden");
-//     die("Token de segurança inválido");
-// }
-
 // Configuração do banco de dados
 $host = "localhost";
 $user = "root";
